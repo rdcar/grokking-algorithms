@@ -1,4 +1,4 @@
-#Entendendo Algoritmos (Grokking Algorithms)
+# Entendendo Algoritmos (Grokking Algorithms)
 Resumo estruturado do livro "Entendendo Algoritmos - Um guia ilustrado para programadores e outros curiosos" de Aditya Y. Bhargava  
 ![](cover.jpg)  
   
