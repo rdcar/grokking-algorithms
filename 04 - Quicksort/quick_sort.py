@@ -5,7 +5,7 @@
 
 # BigO Log (n^2) 
 def quicksort(lista):
-    if len(lista) < 2:
+    if len(lista) < 2: #Arrays com 0 ou 1 elemento já estão ordenados
         return lista
     
     #Definição do pivô e divisão da lista em listas menores
@@ -26,7 +26,9 @@ estaremos iterando sobre o número completo de elementos da lista. Assim,
 BigO -> Log(n^2)
 
 Se quisermos otimizar, podemos escolher o pivô como sendo o elemento
-do meio da lista (a mediana). Dessa forma, a complexidade seria n*log(n)
+do meio da lista (a mediana). Dessa forma, a complexidade seria n*log(n) pois a cada interação as sublistas
+vão particionando o problema pela metade. Então, a complexidade total é dada pela complexidade do número de sublistas (n) multiplicado
+pela complexidade do próprio algoritmo em cada uma das sublistas Log(n). Portanto, BigO(n*Log(n)).
 
 meio = len(lista) // 2
 
@@ -48,5 +50,3 @@ def quicksort(lista):
 
 print(quicksort([1, -2, 3, 5, 9, -10, 60, 73, 78, 99, 102, 105, 123, 204]))
 # [1, -2, 3, 5, 9, -10, 60, 73, 78, 99, 102, 105, 123, 204]
-
-
