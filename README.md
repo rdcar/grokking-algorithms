@@ -4,7 +4,7 @@ Resumo estruturado e código comentado do livro "Entendendo Algoritmos - Um guia
   
 
   Sumário
-  * [Capítulo 01 - Busca binária e Big O]((https://github.com/rdcar/grokking-algorithms/tree/main/01%20-%20Busca%20Bin%C3%A1ria%20e%20BigO))
+  * [Capítulo 01 - Busca binária e Big O](https://github.com/rdcar/grokking-algorithms/tree/main/01%20-%20Busca%20Bin%C3%A1ria%20e%20BigO)
   * [Capítulo 02 - Ordenação por seleção](https://github.com/rdcar/grokking-algorithms/tree/main/02%20-%20Ordena%C3%A7%C3%A3o%20por%20sele%C3%A7%C3%A3o)
   * [Capítulo 03 - Recursão](https://github.com/rdcar/grokking-algorithms/tree/main/03%20-%20Recurs%C3%A3o)
   * [Capítulo 04 - Quicksort](https://github.com/rdcar/grokking-algorithms/tree/main/04%20-%20Quicksort)
