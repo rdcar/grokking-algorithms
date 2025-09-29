@@ -35,7 +35,7 @@ def pesquisa1(nome):
             verificadas.add(pessoa)
 
             for vizinho in grafo[pessoa]:
-                if vizinho not in verificadas: # Adiciona os vizinhos da pessoa à fila, se eles ainda não foram visitados (otimização)
+                if vizinho not in verificadas: # Verifica se um vizinho já foi visitado antes de adicioná-lo à fila, o que evita o problema de duplicatas e mantém a fila (fila_de_pesquisa) menor e mais leve.
                     fila_de_pesquisa.append(vizinho)
     
     return False
