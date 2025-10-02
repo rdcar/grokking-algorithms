@@ -102,7 +102,6 @@ Muitos problemas envolvem a escolha de incluir ou não cada um dos $n$ elementos
 
 **A conclusão é:** A alta complexidade dos algoritmos exatos é o **preço que se paga pela garantia de otimalidade**, pois eles precisam considerar um vasto (e crescente) espaço de soluções.
 
-
 ### 2. Algoritmos Gulosos: A Estratégia da Escolha Única (Complexidade Baixa)
 
 Algoritmos gulosos evitam a exploração exponencial ao fazer uma **escolha única e localmente ótima** em cada etapa e, crucialmente, **nunca voltando atrás**.
@@ -120,6 +119,29 @@ A complexidade mais baixa vem do fato de que o algoritmo gasta a maior parte do 
 
 **A conclusão é:** A baixa complexidade dos algoritmos gulosos é o **resultado de sua negligência**. Eles ignoram a vasta maioria das combinações possíveis, focando apenas na escolha imediata. Isso os torna rápidos, mas arrisca a qualidade da solução.
 
+## O Que Significa "NP-Completo"?
+
+* **NP (Tempo Polinomial Não-Determinístico):** É a classe de problemas para os quais uma **solução proposta** pode ser **verificada** (confirmada como correta ou incorreta) rapidamente, em tempo polinomial. O "rapidamente" aqui significa que o tempo de verificação cresce de forma gerenciável à medida que o tamanho do problema aumenta.
+* **Completude:** Um problema é considerado "completo" para a classe NP se ele satisfaz duas condições:
+    1.  Ele pertence à classe **NP**.
+    2.  Qualquer outro problema em **NP** pode ser **reduzido** a ele em tempo polinomial. Isso significa, essencialmente, que ele é **pelo menos tão difícil** quanto qualquer outro problema em NP.
+
+### A Questão Principal: P vs. NP
+
+A grande importância dos NP-completos está ligada a um dos maiores problemas não resolvidos da ciência da computação, conhecido como **P vs. NP**:
+
+* **P (Tempo Polinomial):** É a classe de problemas que podem ser **resolvidos** rapidamente (em tempo polinomial).
+* **A Pergunta:** **P = NP?** Isso é, todo problema cuja solução pode ser rapidamente *verificada* também pode ser rapidamente *resolvido*?
+* **O Papel do NP-Completo:** Se alguém encontrasse um algoritmo rápido (em tempo polinomial) para **qualquer** problema NP-completo, isso **automaticamente** significaria que *todos* os problemas em NP podem ser resolvidos rapidamente. Em outras palavras, provaria-se que **P = NP**. A maioria dos cientistas da computação, no entanto, acredita que $P \neq NP$.
+
+### Características Principais
+
+* **Aparentemente Insolúveis (para resolução rápida):** Embora a verificação seja fácil, até hoje, não se conhece um algoritmo eficiente (polinomial) para **resolver** um problema NP-completo no pior caso. Os algoritmos mais conhecidos têm complexidade exponencial, o que os torna impraticáveis para grandes instâncias.
+* **Exemplos Clássicos:**
+    * **Problema do Caixeiro Viajante (TSP):** Encontrar o caminho mais curto que visita uma lista de cidades e retorna à cidade de partida.
+    * **Problema da Satisfatibilidade Booleana (SAT):** Determinar se existe uma atribuição de valores verdadeiros/falsos para as variáveis de uma fórmula lógica que a torna verdadeira.
+
+Os problemas **NP-completos** são um grupo de problemas cruciais que representam a **fronteira da dificuldade computacional** em NP. Eles são difíceis de resolver, fáceis de verificar e a descoberta de uma solução rápida para um deles teria implicações profundas para toda a ciência da computação.
 
 # Explicação detalhada do código
 ## 1\. Configuração Inicial: Os Dados do Problema
